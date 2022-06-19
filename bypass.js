@@ -2,7 +2,9 @@
 // @name         Linkvertise Bypass by amboss.dev
 // @version      1.0
 // @description  Bypasses Linkvertise urls and redirects to the target url.
+// @namespace https://amboss.dev/
 // @author       amboss.dev
+// @license GNU GPLv3
 // @match        *://*.linkvertise.com/*
 // @match        *://*.linkvertise.net/*
 // @match        *://*.linkvertise.download/*
