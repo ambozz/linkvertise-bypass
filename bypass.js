@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Linkvertise Bypass by amboss.dev
-// @version      1.0
+// @version      1.1
 // @description  Bypasses Linkvertise urls and redirects to the target url.
 // @namespace https://amboss.dev/
 // @author       amboss.dev
@@ -35,7 +35,7 @@ function reqListener () {
 setTimeout(function(){
     var oReq = new XMLHttpRequest();
     oReq.addEventListener("load", reqListener);
-    oReq.open("POST", "https://api.bypass.vip/");
+    oReq.open("GET", "https://bypass.cx/api.php?url=" + location.href);
     oReq.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    oReq.send("url=" + location.href);
+    oReq.send();
 },50);
